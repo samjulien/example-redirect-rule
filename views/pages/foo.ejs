@@ -5,8 +5,7 @@
       HELLO CUSTOM PROMPT
     </H1>
 
-    <form action="https://seejee-node-12.stage.auth0.com/continue" method="post">
-      <input type="hidden" id="state" name="state" value="<%= state %>" />
+    <form action="https://seejee-node-12.stage.auth0.com/continue?state=<%= state %>" method="post">
       <input type="submit" />
     </form>
 </body>
