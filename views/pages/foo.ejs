@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
-<body>
-HELLO
+  <body>
+    <H1>
+      HELLO CUSTOM PROMPT
+    </H1>
+
+    <form action="/my-custom-prompt" method="post">
+      <input type="hidden" id="state" name="state" value="<%= state %>" />
+      <input type="submit" />
+    </form>
 </body>
 </html>
