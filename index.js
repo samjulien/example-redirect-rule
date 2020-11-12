@@ -22,6 +22,6 @@ express()
 
     console.log("Redirecting with state ", state);
 
-    res.redirect(`https://sam-auth0-demos.auth0.com/continue?state=${state}&animal=${animal}`);
+    res.redirect(`https://sam-auth0-demos.us.auth0.com/continue?state=${state}&animal=${animal}`);
   })
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
