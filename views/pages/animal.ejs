@@ -6,8 +6,12 @@
   </head>
   <body class="text-center" width="400px" style="margin-left: 100px; margin-top: 100px;">
     <form class="form-signin" action="/my-custom-prompt" method="post" style="width: 300px;">
-      <label for="color">What is your favorite color?</label><br>
-      <input type="text" id="color" name="color" class="form-control"><br>
+      <label for="animal">What is your favorite animal?</label><br>
+      <select name="animal" id="animal" class="form-control">
+        <option value="dog">Dog 🐶</option>
+        <option value="cat">Cat 🐈</option>
+        <option value="hedgehog">Hedgehog 🦔</option>
+      </select><br/>
       <input type="hidden" name="state" value="<%= state %>" />
       <button class="btn btn-lg btn-primary btn-block" type="submit">Submit"</button>
     </form>

@@ -14,14 +14,14 @@ express()
   .get('/my-custom-prompt', (req, res) => {
     const state = req.query.state;
 
-    res.render('pages/color', { state });
+    res.render('pages/animal', { state });
   })
   .post('/my-custom-prompt', (req, res) => {
     console.log(req.body)
-    const { state, color } = req.body;
+    const { state, animal } = req.body;
 
     console.log("Redirecting with state ", state);
 
-    res.redirect(`https://seejee-node-12-us.auth0.com/continue?state=${state}&color=${color}`);
+    res.redirect(`https://sam-auth0-demos.auth0.com/continue?state=${state}&animal=${animal}`);
   })
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
